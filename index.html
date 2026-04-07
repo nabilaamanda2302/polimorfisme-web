@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Polimorfisme & Abstraksi</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffb6c1;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    .identitas {
+      background: white;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      color: #ff1493;
+      font-weight: bold;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      margin: 15px auto;
+      width: 90%;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+
+    h2 {
+      color: #ff1493;
+    }
+
+    pre {
+      background: #ffe4ec;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+    }
+
+    button {
+      background: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>💖 Polimorfisme & Abstraksi 💖</h1>
+
+  <div class="identitas">
+    Nama: Nabila Amanda <br>
+    NIM: 251410023 <br>
+    Kelas: SI 2A
+  </div>
+
+  <!-- 1 -->
+  <div class="card">
+    <h2>1. Review Inheritance</h2>
+    <p>Menggunakan extends untuk pewarisan, super untuk constructor, dan override untuk mengganti method.</p>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <h2>2. Pengertian Polimorfisme</h2>
+    <p>Polimorfisme berarti banyak bentuk, dimana satu objek memiliki banyak perilaku.</p>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <h2>3. Konsep Polimorfisme</h2>
+    <p>Objek subclass bisa diperlakukan sebagai superclass.</p>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <h2>4. Jenis Polimorfisme</h2>
+    <p>Compile-time dan runtime (yang digunakan di Dart adalah runtime).</p>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <h2>5. Polimorfisme dengan Inheritance</h2>
+    <pre>
+Bentuk b = Lingkaran();
+b.gambar();
+    </pre>
+  </div>
+
+  <!-- 6 -->
+  <div class="card">
+    <h2>6. Manfaat Polimorfisme</h2>
+    <ul>
+      <li>Fleksibilitas</li>
+      <li>Reusability</li>
+      <li>Maintainability</li>
+    </ul>
+  </div>
+
+  <!-- 7 -->
+  <div class="card">
+    <h2>7. Operator is dan as</h2>
+    <pre>
+if (k is Mobil) {
+  (k as Mobil).klakson();
+}
+    </pre>
+  </div>
+
+  <!-- 8 -->
+  <div class="card">
+    <h2>8. Polimorfisme dengan List</h2>
+    <p>Menggunakan List untuk menyimpan berbagai object subclass.</p>
+  </div>
+
+  <!-- 9 -->
+  <div class="card">
+    <h2>9. Pengertian Abstraksi</h2>
+    <p>Menyembunyikan detail dan hanya menampilkan fungsi penting.</p>
+  </div>
+
+  <!-- 10 -->
+  <div class="card">
+    <h2>10. Tujuan Abstraksi</h2>
+    <p>Fokus pada fungsi utama dan mempermudah penggunaan.</p>
+  </div>
+
+  <!-- 11 -->
+  <div class="card">
+    <h2>11. Abstract Class</h2>
+    <pre>
+abstract class Kendaraan {
+  void start();
+}
+    </pre>
+  </div>
+
+  <!-- 12 -->
+  <div class="card">
+    <h2>12. Abstract Method</h2>
+    <p>Method tanpa isi yang wajib dioverride.</p>
+  </div>
+
+  <!-- 13 -->
+  <div class="card">
+    <h2>13. Interface</h2>
+    <pre>
+class Bird implements Flyable {
+  void terbang() {
+    print("Terbang");
+  }
+}
+    </pre>
+  </div>
+
+  <!-- 14 -->
+  <div class="card">
+    <h2>14. Studi Kasus</h2>
+    <p>Penerapan pada sistem pembayaran dan bentuk geometri.</p>
+  </div>
+
+  <!-- CONTOH -->
+  <div class="card">
+    <h2>💖 Contoh Polimorfisme</h2>
+    <pre>
+class Hewan {
+  void suara() {
+    print("Hewan");
+  }
+}
+
+class Kucing extends Hewan {
+  void suara() {
+    print("Meong");
+  }
+}
+    </pre>
+    <button onclick="tampil()">Lihat Output</button>
+    <p id="out"></p>
+  </div>
+
+  <footer>
+    🌸 Dibuat oleh Nabila Amanda 🌸
+  </footer>
+
+</div>
+
+<script>
+function tampil(){
+  document.getElementById("out").innerHTML = "Meong 🐱";
+}
+</script>
+
+</body>
+</html>
