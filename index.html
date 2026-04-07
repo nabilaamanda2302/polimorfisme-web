@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <title>Polimorfisme & Abstraksi</title>
 
-<script src="https://dartpad.dev/inject_embed.dart.js"></script>
-
 <style>
 body {background:#ffb6c1;font-family:sans-serif;text-align:center;}
 .card {background:white;margin:15px auto;padding:20px;width:90%;border-radius:15px;text-align:left;}
 .identitas {background:white;padding:10px;border-radius:10px;display:inline-block;}
 h2{color:#ff1493;}
+iframe{border-radius:10px;}
 </style>
 
 </head>
@@ -24,95 +23,108 @@ NIM: 251410023 <br>
 Kelas: SI 2A
 </div>
 
+<!-- 1 -->
 <div class="card">
 <h2>1. Review Inheritance</h2>
-<p>Inheritance adalah konsep pewarisan dimana class dapat mewarisi sifat dari class lain menggunakan keyword extends.</p>
+<p>Inheritance adalah konsep pewarisan dimana suatu class dapat mewarisi atribut dan method dari class lain menggunakan keyword extends.</p>
 </div>
 
+<!-- 2 -->
 <div class="card">
 <h2>2. Pengertian Polimorfisme</h2>
-<p>Polimorfisme berarti banyak bentuk, dimana satu objek dapat memiliki perilaku yang berbeda.</p>
+<p>Polimorfisme berarti banyak bentuk, yaitu kemampuan suatu objek untuk memiliki lebih dari satu bentuk perilaku.</p>
 </div>
 
+<!-- 3 -->
 <div class="card">
 <h2>3. Konsep Polimorfisme</h2>
-<p>Objek dari subclass dapat diperlakukan sebagai superclass sehingga lebih fleksibel.</p>
+<p>Objek dari subclass dapat diperlakukan sebagai superclass sehingga memudahkan dalam penggunaan dan pengembangan program.</p>
 </div>
 
+<!-- 4 -->
 <div class="card">
 <h2>4. Jenis Polimorfisme</h2>
-<p>Terdapat compile-time dan runtime, namun Dart menggunakan runtime polymorphism.</p>
+<p>Terdapat dua jenis yaitu compile-time dan runtime, namun pada Dart yang digunakan adalah runtime polymorphism melalui overriding.</p>
 </div>
 
+<!-- 5 -->
 <div class="card">
 <h2>5. Polimorfisme dengan Inheritance</h2>
-<p>Method yang dipanggil tergantung objek aslinya meskipun menggunakan tipe parent.</p>
+<p>Method yang dipanggil akan menyesuaikan dengan objek yang digunakan walaupun menggunakan tipe parent.</p>
 </div>
 
+<!-- 6 -->
 <div class="card">
 <h2>6. Manfaat Polimorfisme</h2>
-<p>Mempermudah pengembangan, penggunaan ulang kode, dan membuat program lebih fleksibel.</p>
+<p>Polimorfisme membuat program lebih fleksibel, mudah dikembangkan, dan dapat menggunakan kembali kode.</p>
 </div>
 
+<!-- 7 -->
 <div class="card">
 <h2>7. Operator is dan as</h2>
-<p>Operator is digunakan untuk mengecek tipe objek, sedangkan as digunakan untuk casting tipe.</p>
+<p>Operator is digunakan untuk mengecek tipe objek, sedangkan as digunakan untuk mengubah tipe objek (casting).</p>
 </div>
 
+<!-- 8 -->
 <div class="card">
 <h2>8. Polimorfisme dengan List</h2>
-<p>List dapat digunakan untuk menyimpan berbagai object dari subclass dalam satu tipe parent.</p>
+<p>List dapat digunakan untuk menyimpan berbagai objek dari subclass dalam satu tipe parent.</p>
 </div>
 
+<!-- 9 -->
 <div class="card">
 <h2>9. Pengertian Abstraksi</h2>
-<p>Abstraksi adalah menyembunyikan detail kompleks dan hanya menampilkan bagian penting.</p>
+<p>Abstraksi adalah proses menyembunyikan detail yang kompleks dan hanya menampilkan fungsi penting kepada pengguna.</p>
 </div>
 
+<!-- 10 -->
 <div class="card">
 <h2>10. Tujuan Abstraksi</h2>
-<p>Untuk mempermudah penggunaan program dan meningkatkan fleksibilitas.</p>
+<p>Untuk menyederhanakan penggunaan program dan meningkatkan fleksibilitas dalam pengembangan.</p>
 </div>
 
+<!-- 11 -->
 <div class="card">
 <h2>11. Abstract Class</h2>
-<p>Abstract class adalah class yang tidak bisa dibuat objek langsung dan berisi method abstract.</p>
+<p>Abstract class adalah class yang tidak dapat dibuat objek secara langsung dan digunakan sebagai kerangka dasar.</p>
 </div>
 
+<!-- 12 -->
 <div class="card">
 <h2>12. Abstract Method</h2>
-<p>Method tanpa isi yang wajib diimplementasikan oleh subclass.</p>
+<p>Method tanpa isi yang harus diimplementasikan oleh class turunan.</p>
 </div>
 
+<!-- 13 -->
 <div class="card">
 <h2>13. Interface</h2>
-<p>Interface digunakan untuk mendefinisikan kemampuan yang harus dimiliki class.</p>
+<p>Interface digunakan untuk menentukan kemampuan yang harus dimiliki oleh suatu class.</p>
 </div>
 
+<!-- 14 -->
 <div class="card">
 <h2>14. Studi Kasus</h2>
-<p>Penerapan konsep ini dapat digunakan pada sistem pembayaran dan bentuk geometri.</p>
+<p>Konsep ini digunakan dalam berbagai sistem seperti pembayaran digital dan perhitungan bentuk geometri.</p>
 </div>
 
 <!-- DARTPAD -->
 <div class="card">
-<h2>💻 Contoh Polimorfisme (Run)</h2>
+<h2>💻 Contoh Polimorfisme (Klik RUN)</h2>
 
 <iframe style="width:100%;height:400px;"
-src="https://dartpad.dev/embed-inline.html?id=6d6e0c0e8d2c5e8e1f4c6b6a6c4b1f2a">
+src="https://dartpad.dev/embed-inline.html?code=class%20Hewan%20%7B%0A%20%20void%20suara()%20%7B%0A%20%20%20%20print(%22Hewan%22);%0A%20%20%7D%0A%7D%0A%0Aclass%20Kucing%20extends%20Hewan%20%7B%0A%20%20void%20suara()%20%7B%0A%20%20%20%20print(%22Meong%20%F0%9F%90%B1%22);%0A%20%20%7D%0A%7D%0A%0Aclass%20Anjing%20extends%20Hewan%20%7B%0A%20%20void%20suara()%20%7B%0A%20%20%20%20print(%22Guk%20guk%20%F0%9F%90%B6%22);%0A%20%20%7D%0A%7D%0A%0Avoid%20main()%20%7B%0A%20%20List%3CHewan%3E%20list%20%3D%20%5BKucing(),%20Anjing()%5D;%0A%20%20for%20(var%20h%20in%20list)%20%7B%0A%20%20%20%20h.suara();%0A%20%20%7D%0A%7D">
 </iframe>
 
 </div>
 
 <div class="card">
-<h2>⚙️ Contoh Abstraksi (Run)</h2>
+<h2>⚙️ Contoh Abstraksi (Klik RUN)</h2>
 
 <iframe style="width:100%;height:400px;"
-src="https://dartpad.dev/embed-inline.html?id=2b3c4d5e6f7a8b9c1d2e3f4a5b6c7d8e">
+src="https://dartpad.dev/embed-inline.html?code=abstract%20class%20Kendaraan%20%7B%0A%20%20void%20jalan();%0A%7D%0A%0Aclass%20Mobil%20extends%20Kendaraan%20%7B%0A%20%20void%20jalan()%20%7B%0A%20%20%20%20print(%22Mobil%20berjalan%20%F0%9F%9A%97%22);%0A%20%20%7D%0A%7D%0A%0Avoid%20main()%20%7B%0A%20%20Mobil%20m%20%3D%20Mobil();%0A%20%20m.jalan();%0A%7D">
 </iframe>
 
 </div>
 
 </body>
-</html>
-      
+</html> 
